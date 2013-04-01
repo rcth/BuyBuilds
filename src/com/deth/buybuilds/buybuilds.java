@@ -17,7 +17,8 @@ import org.bukkit.plugin.PluginDescriptionFile;
 
 public final class BuyBuilds extends JavaPlugin {
 	
-	private PluginDescriptionFile description = null;
+	//////////////////Attributes//////////////////
+	private PluginDescriptionFile description;
     
     
 	@Override

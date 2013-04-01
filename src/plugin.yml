@@ -1,4 +1,5 @@
 name: BuyBuilds
 main: com.deth.buybuilds.BuyBuilds
 version: V0.1
+load: STARTUP
 authors: [rcth, cannonb4ll]

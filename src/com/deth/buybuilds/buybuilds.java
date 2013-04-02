@@ -1,5 +1,7 @@
 //////////////////Notes//////////////////
+// If you find a bug in a change or if you don't agree with something we did, make a pullrequest or open a ticket! //
 
+// Package name, DO NOT TOUCH! //
 package com.deth.buybuilds;
 
 //////////////////Imports//////////////////
@@ -20,8 +22,8 @@ import org.bukkit.plugin.PluginDescriptionFile;
 public final class BuyBuilds extends JavaPlugin {
 	
 	//////////////////Attributes//////////////////
-	private PluginDescriptionFile description;
-	private String latestVersion;
+	private PluginDescriptionFile description; //Variable for getting plugin.yml info
+	private String latestVersion; //Variable for storing latest version from the site
     
     
 	@Override

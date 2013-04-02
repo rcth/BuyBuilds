@@ -1,3 +1,5 @@
+//////////////////Notes//////////////////
+
 package com.deth.buybuilds;
 
 //////////////////Imports//////////////////
@@ -19,6 +21,7 @@ public final class BuyBuilds extends JavaPlugin {
 	
 	//////////////////Attributes//////////////////
 	private PluginDescriptionFile description;
+	private String latestVersion;
     
     
 	@Override
@@ -29,7 +32,20 @@ public final class BuyBuilds extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		getLogger().info("[" + description.getName() + "] Ready to enable plugin...");
+		///TODO: Add logic for enabling plugin, like initilize command, permissions, mysql///
 		getLogger().info("[" + description.getName() + "] Running version " + description.getVersion() + "!");
+		getLogger().info("[" + description.getName() + "] Made by: " + description.getAuthors() + "!");
+		getLogger().info("[" + description.getName() + "] Cheap dutch Minecraft servers? Check http://www.serverbuilds.nl!");
+		getLogger().info("[" + description.getName() + "] Plugin will check for updates, please stand by...");
+		///TODO: Add versioncheck logic///
+		getLogger().info("[" + description.getName() + "] Current version " + description.getVersion() + " where latest version equals " + latestVersion);
+		if (description.getVersion() == latestVersion)
+		{
+			getLogger().info("[" + description.getName() + "] You are running the latest recommended build!");
+		} else {
+			getLogger().info("[" + description.getName() + "] There is a newer build available! We recommended updating, due to bugfixes and new features and maybe critical safety issues.");
+			getLogger().info("[" + description.getName() + "] Plugin will still run if compatible with this version of Craftbukkit.");
+		}
 	}
 	
 	

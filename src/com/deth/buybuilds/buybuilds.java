@@ -45,9 +45,11 @@ public final class BuyBuilds extends JavaPlugin {
 		{
 			getLogger().info("[" + description.getName() + "] You are running the latest recommended build!");
 		} else {
-			getLogger().info("[" + description.getName() + "] There is a newer build available! We recommended updating, due to bugfixes and new features and maybe critical safety issues.");
+			getLogger().info("[" + description.getName() + "] There is a newer build available! We recommended updating, due to bugfixes, new features and maybe critical safety issues.");
 			getLogger().info("[" + description.getName() + "] Plugin will still run if compatible with this version of Craftbukkit.");
 		}
+		getLogger().info("[" + description.getName() + "] Plugin will check secret authkey, please stand by...");
+		///TODO: Add logic for checking authkey, needs website script and 2 variables: 1 for saving the one in config and 1 for the return of the site///
 	}
 	
 	
